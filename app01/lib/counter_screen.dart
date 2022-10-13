@@ -43,6 +43,7 @@ class _CounterScreenState extends State<CounterScreen> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
+          //child: const Text("Reset"),
           child: const Icon(Icons.add),
           onPressed: () {
             contador++;
