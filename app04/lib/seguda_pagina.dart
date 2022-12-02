@@ -10,14 +10,17 @@ class SegundaPagina extends StatelessWidget {
         appBar: AppBar(title: const Text("Segunda ruta")),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
                   child: const Text("Regresar a Home")),
+              const SizedBox(
+                height: 1200,
+              ),
               ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, "/TerceraPagina");
